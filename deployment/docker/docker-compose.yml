@@ -211,15 +211,15 @@ configs:
             scopes: ["user:email"]
 
       staticPasswords:
-        - email: "admin@logchef.internal"
-          hash: "$$2a$$10$$dhpreVAbkedKYtgzZfMsRu/S8BJ1/mWbqBYiXwqINmyp4GwvfuDDS"
-          username: "admin"
-          userID: "08a8684b-db88-4b73-90a9-3cd1661f5466"
+        - email: "${DEX_ADMIN_EMAIL}"
+          hash: "${DEX_ADMIN_HASH}"
+          username: "${DEX_ADMIN_USERNAME}"
+          userID: "${DEX_ADMIN_USERID}"
 
-        - email: "demo@logchef.internal"
-          hash: "$$2a$$10$$dhpreVAbkedKYtgzZfMsRu/S8BJ1/mWbqBYiXwqINmyp4GwvfuDDS"
-          username: "demo-user"
-          userID: "08a8684b-db88-4b73-90a9-3cd1661f5467"
+        - email: "${DEX_DEMO_EMAIL}"
+          hash: "${DEX_DEMO_HASH}"
+          username: "${DEX_DEMO_USERNAME}"
+          userID: "${DEX_DEMO_USERID}"
 
   vector_config:
     content: |
